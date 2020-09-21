@@ -538,3 +538,6 @@ DELETE /products/id
 ![19](img/lab2_19.png)
 
 ### 4. Vista de C&C de la arquitectura identificada.
+
+![Vista C&C](img/vista_cc.png)
+
