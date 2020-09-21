@@ -452,20 +452,29 @@ definitions:
 El microservicio expone 10 operaciones en total. A continuación mostramos la ejecución de cada una de estas en el servidor.
 
 ```
-GET /categories
-```
-```
 POST /categories
 ```
+![01](img/lab2_01.png)
+```
+GET /categories
+```
+![02](img/lab2_02.png)
 ```
 GET /categories/id
 ```
+![03](img/lab2_03.png)
 ```
 PUT /categories/id
 ```
+![04](img/lab2_04.png)
 ```
 DELETE /categories/id
 ```
+![05](img/lab2_05.png)
+
+
+
+
 
 ```
 GET /products
