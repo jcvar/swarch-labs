@@ -451,6 +451,8 @@ definitions:
 
 El microservicio expone 10 operaciones en total. A continuación mostramos la ejecución de cada una de estas en el servidor.
 
+#### Operaciones de Categorías:
+
 ```
 POST /categories
 ```
@@ -472,24 +474,67 @@ DELETE /categories/id
 ```
 ![05](img/lab2_05.png)
 
+#### Operaciones de Productos:
 
-
-
-
-```
-GET /products
-```
 ```
 POST /products
 ```
+![06](img/lab2_06.png)
+```
+GET /products
+```
+![07](img/lab2_07.png)
 ```
 GET /products/id
 ```
+![08](img/lab2_08.png)
 ```
 PUT /products/id
 ```
+![09](img/lab2_09.png)
 ```
 DELETE /products/id
 ```
+![10](img/lab2_10.png)
+
+
 ### 3. Soporte visual de las acciones evidenciadas en la base de datos, tras la ejecución de las peticiones sobre la API-REST.
+
+
+#### Operaciones de Categorías:
+
+Observamos los contenidos iniciales de la tabla `supermarket_ms_category`:
+
+![11](img/lab2_11.png)
+```
+POST /categories
+```
+![12](img/lab2_12.png)
+```
+PUT /categories/id
+```
+![13](img/lab2_13.png)
+```
+DELETE /categories/id
+```
+![14](img/lab2_14.png)
+
+#### Operaciones de Productos:
+
+Observamos los contenidos iniciales de la tabla `supermarket_ms_product`:
+
+![16](img/lab2_16.png)
+```
+POST /products
+```
+![17](img/lab2_17.png)
+```
+PUT /products/id
+```
+![18](img/lab2_18.png)
+```
+DELETE /products/id
+```
+![19](img/lab2_19.png)
+
 ### 4. Vista de C&C de la arquitectura identificada.
