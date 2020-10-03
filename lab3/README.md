@@ -25,10 +25,10 @@ mutation {
 }
 ```
 Ejecución de la petición:
-![02](img/lab3_02.png)
+![02](img/Lab3_02.png)
 
 Base de datos luego de realizar la petición:
-![03](img/lab3_03.png)
+![03](img/Lab3_03.png)
 
 #### Actualizar una categoria:
 
@@ -45,10 +45,10 @@ mutation {
 }
 ```
 Ejecución de la petición:
-![04](img/lab3_04.png)
+![04](img/Lab3_04.png)
 
 Base de datos luego de realizar la petición:
-![05](img/lab3_05.png)
+![05](img/Lab3_05.png)
 
 #### Consultar los nombres de todas las categorías:
 
@@ -60,7 +60,7 @@ query {
 }
 ```
 Ejecución de la petición:
-![06](img/lab3_06.png)
+![06](img/Lab3_06.png)
 
 #### Consultar el id y nombre de una categoria:
 
@@ -74,7 +74,7 @@ query {
 
 ```
 Ejecución de la petición:
-![07](img/lab3_07.png)
+![07](img/Lab3_07.png)
 
 #### Eliminar una categoria:
 
@@ -85,9 +85,9 @@ mutation {
 
 ```
 Ejecución de la petición:
-![08](img/lab3_08.png)
+![08](img/Lab3_08.png)
 
 Base de datos luego de realizar la petición:
-![09](img/lab3_09.png)
+![09](img/Lab3_09.png)
 
 
