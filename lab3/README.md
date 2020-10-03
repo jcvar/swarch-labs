@@ -10,7 +10,7 @@
 
 A continuación se encuentran el soporte visual de cada una de las peticiones y la evidencia de su acción en la base datos, en los casos pertinentes.
 Estado inicial de la base de datos:
-![01](lab3/img/Lab3_01.png)
+![01](img/Lab3_01.png)
 
 #### Crear una categoria:
 
