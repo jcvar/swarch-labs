@@ -1,93 +1,46 @@
 #### Universidad Nacional de Colombia
 ### Arquitectura de Software
-## Laboratorio 3
+## Laboratorio 5
 
 - Julian David Acosta
 - Luis Ferney Sandoval
 - Juan Camilo Vargas
 
-### 1. Soporte visual de la ejecución de las peticiones sobre la API-GraphQL, y sus acciones evidenciadas en la base de datos.
+### 1. Soporte visual del despliegue del Servidor LDAP y configuración del directorio interno.
 
-A continuación se encuentran el soporte visual de cada una de las peticiones y la evidencia de su acción en la base datos, en los casos pertinentes.
-Estado inicial de la base de datos:
-![01](img/Lab3_01.png)
+A continuación se encuentran el soporte visual del despliegue del servidor LDAP y de la configuración de su directorio interno
+Despliegue del servidor LDAP y del gestor gráfico (phpLDAPadmin):
+![01](img/Lab5_01.png)
 
-#### Crear una categoria:
+#### Configuración del directorio interno:
 
-```
-mutation {
-  createCategory(category: {
-    name: "Categoría A",
-    description: "Descripción - Categoría A"
-  }) {
-    name
-  }
-}
-```
-Ejecución de la petición:
-![02](img/Lab3_02.png)
+Apertura del gestor gráfico:
+![02](img/Lab5_02.png)
 
-Base de datos luego de realizar la petición:
-![03](img/Lab3_03.png)
+Autenticación como administrador:
+![03](img/Lab5_03.png)
+![04](img/Lab5_04.png)
 
-#### Actualizar una categoria:
+Creación de grupo Posix:
+![05](img/Lab5_05.png)
+![06](img/Lab5_06.png)
+![07](img/Lab5_07.png)
+![08](img/Lab5_08.png)
 
-```
-mutation {
-  updateCategory(id: 10, category: {
-    name: "Categoría A"
-    description: "Nueva Descripción - Categoría A"
-  }) {
-    id
-    name
-    description
-  }
-}
-```
-Ejecución de la petición:
-![04](img/Lab3_04.png)
+Creación de unidad organizacional:
+![09](img/Lab5_09.png)
+![10](img/Lab5_10.png)
+![11](img/Lab5_11.png)
 
-Base de datos luego de realizar la petición:
-![05](img/Lab3_05.png)
+Creación de usuario en la unidad organizacional:
+![12](img/Lab5_12.png)
+![13](img/Lab5_13.png)
+![14](img/Lab5_14.png)
+![15](img/Lab5_15.png)
 
-#### Consultar los nombres de todas las categorías:
+### 2. Soporte visual del despliegue y uso del componente Proxy Inverso.
+Despliegue del componente Proxy Inverso:
+![04](img/Lab5_16.png)
 
-```
-query {
-  allCategories {
-    name
-  }
-}
-```
-Ejecución de la petición:
-![06](img/Lab3_06.png)
-
-#### Consultar el id y nombre de una categoria:
-
-```
-query {
-  categoryById(id: 10) {
-    id
-    name
-  }
-}
-
-```
-Ejecución de la petición:
-![07](img/Lab3_07.png)
-
-#### Eliminar una categoria:
-
-```
-mutation {
-  deleteCategory(id: 10)
-}
-
-```
-Ejecución de la petición:
-![08](img/Lab3_08.png)
-
-Base de datos luego de realizar la petición:
-![09](img/Lab3_09.png)
-
-
+Uso del componente Proxy Inverso:
+![04](img/Lab5_17.png)
