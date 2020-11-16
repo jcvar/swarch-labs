@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="OperationESB" targetNamespace="http://j2ee.netbeans.org/wsdl/BpelOrquestation/src/OperationESB"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/BpelOrquestation/src/OperationESB" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <types/>
+    <message name="OperationESBOperationRequest">
+        <part name="userId" type="xsd:int"/>
+        <part name="amount" type="xsd:int"/>
+        <part name="targetAccount" type="xsd:int"/>
+    </message>
+    <message name="OperationESBOperationResponse">
+        <part name="respond" type="xsd:boolean"/>
+    </message>
+    <portType name="OperationESBPortType">
+        <operation name="OperationESBOperation">
+            <input name="input1" message="tns:OperationESBOperationRequest"/>
+            <output name="output1" message="tns:OperationESBOperationResponse"/>
+        </operation>
+    </portType>
+    <binding name="OperationESBBinding" type="tns:OperationESBPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="OperationESBOperation">
+            <soap:operation/>
+            <input name="input1">
+                <soap:body use="literal" namespace="http://j2ee.netbeans.org/wsdl/BpelOrquestation/src/OperationESB"/>
+            </input>
+            <output name="output1">
+                <soap:body use="literal" namespace="http://j2ee.netbeans.org/wsdl/BpelOrquestation/src/OperationESB"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="OperationESBService">
+        <port name="OperationESBPort" binding="tns:OperationESBBinding">
+            <soap:address location="http://localhost:${HttpDefaultPort}/OperationESBService/OperationESBPort"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="OperationESB">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="OperationESBPortTypeRole" portType="tns:OperationESBPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

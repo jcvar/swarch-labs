@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="urn:WashOutUser" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="wsusers" targetNamespace="urn:WashOutUser">
+  <types>
+    <schema targetNamespace="urn:WashOutUser" xmlns="http://www.w3.org/2001/XMLSchema">
+    </schema>
+  </types>
+  <message name="checkUser">
+    <part name="userId" type="xsd:int" xsi:nillable="true"/>
+  </message>
+  <message name="checkUserResponse">
+    <part name="userValid" type="xsd:boolean" xsi:nillable="true"/>
+    <part name="userAccount" type="xsd:int" xsi:nillable="true"/>
+  </message>
+  <portType name="wsusers_port">
+    <operation name="checkUser">
+      <input message="tns:checkUser"/>
+      <output message="tns:checkUserResponse"/>
+    </operation>
+  </portType>
+  <binding name="wsusers_binding" type="tns:wsusers_port">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="checkUser">
+      <soap:operation soapAction="checkUser"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:WashOutUser"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:WashOutUser"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="service">
+    <port name="wsusers_port" binding="tns:wsusers_binding">
+      <soap:address location="http://ec2-34-204-168-203.compute-1.amazonaws.com:3010/wsusers/action"/>
+    </port>
+  </service>
+</definitions>

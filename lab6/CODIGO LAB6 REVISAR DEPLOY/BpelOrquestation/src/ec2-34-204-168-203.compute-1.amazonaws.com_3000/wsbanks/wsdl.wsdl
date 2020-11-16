@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="urn:WashOutBank" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="wsbanks" targetNamespace="urn:WashOutBank">
+  <types>
+    <schema targetNamespace="urn:WashOutBank" xmlns="http://www.w3.org/2001/XMLSchema">
+    </schema>
+  </types>
+  <message name="makeTransaction">
+    <part name="sourceAccount" type="xsd:int" xsi:nillable="true"/>
+    <part name="targetAccount" type="xsd:int" xsi:nillable="true"/>
+    <part name="userId" type="xsd:int" xsi:nillable="true"/>
+    <part name="amount" type="xsd:double" xsi:nillable="true"/>
+  </message>
+  <message name="makeTransactionResponse">
+    <part name="value" type="xsd:boolean" xsi:nillable="true"/>
+  </message>
+  <message name="checkAccount">
+    <part name="sourceAccount" type="xsd:int" xsi:nillable="true"/>
+    <part name="targetAccount" type="xsd:int" xsi:nillable="true"/>
+    <part name="amount" type="xsd:double" xsi:nillable="true"/>
+  </message>
+  <message name="checkAccountResponse">
+    <part name="value" type="xsd:boolean" xsi:nillable="true"/>
+  </message>
+  <portType name="wsbanks_port">
+    <operation name="makeTransaction">
+      <input message="tns:makeTransaction"/>
+      <output message="tns:makeTransactionResponse"/>
+    </operation>
+    <operation name="checkAccount">
+      <input message="tns:checkAccount"/>
+      <output message="tns:checkAccountResponse"/>
+    </operation>
+  </portType>
+  <binding name="wsbanks_binding" type="tns:wsbanks_port">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="makeTransaction">
+      <soap:operation soapAction="makeTransaction"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:WashOutBank"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:WashOutBank"/>
+      </output>
+    </operation>
+    <operation name="checkAccount">
+      <soap:operation soapAction="checkAccount"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:WashOutBank"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:WashOutBank"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="service">
+    <port name="wsbanks_port" binding="tns:wsbanks_binding">
+      <soap:address location="http://ec2-34-204-168-203.compute-1.amazonaws.com:3000/wsbanks/action"/>
+    </port>
+  </service>
+</definitions>

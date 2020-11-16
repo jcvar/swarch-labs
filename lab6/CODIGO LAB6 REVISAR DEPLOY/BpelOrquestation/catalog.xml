@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <nextCatalog catalog="nbproject/private/retriever/catalog.xml"/>
+    <system systemId="http://ec2-34-204-168-203.compute-1.amazonaws.com:3010/wsusers/wsdl" uri="src/ec2-34-204-168-203.compute-1.amazonaws.com_3010/wsusers/wsdl.wsdl"/>
+    <system systemId="http://ec2-34-204-168-203.compute-1.amazonaws.com:3000/wsbanks/wsdl" uri="src/ec2-34-204-168-203.compute-1.amazonaws.com_3000/wsbanks/wsdl.wsdl"/>
+</catalog>
