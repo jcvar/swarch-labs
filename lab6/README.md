@@ -47,3 +47,21 @@ Se realiza el flujo de operaciones que debe ejecutar el modulo BPEL, y posterior
 
 ![11](img/lab6_11.png)
 
+Ahora, se hace el build del modulo BPEL y se crea la composite application:
+
+![12](img/lab6_12.png)
+
+![13](img/lab6_13.png)
+
+Finalmente, añadimos el modulo BPEL a la composite application, hacemos el build, y desplegamos
+
+![14](img/lab6_14.png)
+
+![15](img/lab6_15.png)
+
+![16](img/lab6_17.png)
+
+Y probamos que el servidor está funcionando correctamente
+
+![17](img/lab6_19.png)
+
