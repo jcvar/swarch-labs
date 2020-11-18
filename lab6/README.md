@@ -10,7 +10,7 @@
 
 Se despliegan las instancias sa_user_ss y sa_bank_ss en la instancia de AWS
 
-![01](img/lab6_01.png)
+![01](img/Lab6_01.png)
 
 Luego, se realiza la verificación del consumo de los servicios web:
 #### sa_bank_ss:
