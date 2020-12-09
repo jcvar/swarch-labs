@@ -10,7 +10,7 @@
 - Santiago Hernández Montano
 - Santiago Alejandro Morales
 
-### 1. Soporte visual del la configración y uso del entorno de pruebas
+### 1. Soporte visual de la configuración y uso del entorno de pruebas
 
 - En Test Plan, agregar un nuevo Thread Group:
   ![01](img/ss1.png)
