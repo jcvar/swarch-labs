@@ -11,4 +11,56 @@
 - En Test Plan, agregar un nuevo Thread Group:
 
 ![01](img/ss1.png)
+ - En Test Plan, añadir un nuevo HTTP(s) Test Script Recorder:
 ![02](img/ss2.png)
+ - Configurar el HTTP(s) Test Script Recorder añadido: 
+![03](img/ss3.png)
+
+- Iniciar el proceso de grabación en JMeter (Start):
+ En Summary Report observar los resultados de la prueba realizada. Tener en cuenta el tiempo de respuesta.
+ ![04](img/ss3.png)
+
+- Soporte visual de las actividades realizadas durante el desarrollo del  escenario 1.
+ * Usuarios = 1
+  ![05](img/sc1/1e1.png)
+ * Usuarios = 5
+ ![06](img/sc1/5e1.png)
+ * Usuarios = 50
+ ![07](img/sc1/50e1.png)
+ * Usuarios = 75
+ ![08](img/sc1/75e1.png)
+ * Usuarios = 100
+ ![09](img/sc1/100e1.png)
+ * Usuarios = 500
+ ![10](img/sc1/500e1.png)
+ * Usuarios = 750
+ ![11](img/sc1/750e1.png)
+ * Usuarios = 1000
+ ![12](img/sc1/1000e1.png)
+ * Usuarios = 2000
+ ![13](img/sc1/2000e1.png)
+
+- Soporte visual de las actividades realizadas durante el desarrollo del  escenario 2.
+* Usuarios = 1
+  ![14](img/sc2/1e2.png)
+ * Usuarios = 5
+ ![15](img/sc2/5e2.png)
+ * Usuarios = 50
+ ![16](img/sc2/50e2.png)
+ * Usuarios = 75
+ ![17](img/sc2/75e2.png)
+ * Usuarios = 100
+ ![18](img/sc2/100e2.png)
+ * Usuarios = 500
+ ![19](img/sc2/500e2.png)
+ * Usuarios = 750
+ ![20](img/sc2/750e2.png)
+ * Usuarios = 1000
+ ![21](img/sc2/1000e2.png)
+ * Usuarios = 2000
+ ![22](img/sc2/2000e2.png)
+
+- La tabla y gráfica de rendimiento usando los datos obtenidos en los pasos anteriores, donde se evidencie la curva de rendimiento  para cada uno de los dos escenarios probados.
+
+![23](img/tabla.png)
+![24](img/grafica.png)
