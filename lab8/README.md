@@ -66,5 +66,5 @@
 
 - La tabla y gráfica de rendimiento usando los datos obtenidos en los pasos anteriores, donde se evidencie la curva de rendimiento  para cada uno de los dos escenarios probados.
 
-![23](img/tabla.png)
-![24](img/grafica.png)
+![23](img/tabla.PNG)
+![24](img/grafica.PNG)
