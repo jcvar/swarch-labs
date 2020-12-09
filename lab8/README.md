@@ -1,10 +1,14 @@
 #### Universidad Nacional de Colombia
 ### Arquitectura de Software
-## Laboratorio 8
+## Laboratorio 8 - Grupo 2E.
 
-- Julian David Acosta
-- Luis Ferney Sandoval
-- Juan Camilo Vargas
+- Julian David Acosta.
+- Luis Ferney Sandoval.
+- Juan Camilo Vargas.
+- Francisco Javier Bernal.
+- Santiago Duque Bernal.
+- Santiago Hernández Montano.
+- Santiago Alejandro Morales.
 
 ### 1. Soporte visual del la configraciòn y uso del entorno de pruebas. 
 
