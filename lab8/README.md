@@ -10,7 +10,7 @@
 - Santiago Hernández Montano
 - Santiago Alejandro Morales
 
-### 1. Soporte visual del la configración y uso del entorno de pruebas
+### 1. Soporte visual de la configuración y uso del entorno de pruebas
 
 - En Test Plan, agregar un nuevo Thread Group:
   ![01](img/ss1.png)
@@ -64,7 +64,7 @@
 * Usuarios = 2000
   ![22](img/sc2/2000e2.png)
 
-#### Tabla y gráfica de rendimiento usando los datos obtenidos en los pasos anteriores, donde se evidencie la curva de rendimiento  para cada uno de los dos escenarios probados
+#### Tabla y gráfica de rendimiento usando los datos obtenidos en los pasos anteriores, donde se evidencie la curva de rendimiento para cada uno de los dos escenarios probados
 
 Realizando cada prueba un total de 3 veces, y promediando los resultados de 'Tiempo de Respuesta' obtenidos logramos completar la siguiente tabla:
   ![23](img/tabla.png)
